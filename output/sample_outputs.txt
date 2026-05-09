@@ -1,0 +1,9 @@
+----- Order Summary -----
+Laptop x 1 = ₹50000.0
+Subtotal: ₹50000.0
+Discount applied (FLAT500): -₹500.0
+Tax (10%): ₹4950.0
+Total: ₹54450.0
+-------------------------
+Thank you for shopping with us!
+

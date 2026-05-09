@@ -1,0 +1,9 @@
+id,name,price,stock
+P01,Laptop,50000.0,5
+P02,Keyboard,500.0,1
+P03,Mouse,300.0,3
+P04,Monitor,100.0,10
+P05,Headphones,200.0,10
+P06,Webcam,300.0,10
+P07,PrecisionItem,333.33,10
+P08,ExpensiveItem,5000.0,10
