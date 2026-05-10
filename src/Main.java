@@ -35,11 +35,10 @@ public class Main {
             System.out.println("\n--- Main Menu ---");
             System.out.println("1. Browse Products");
             System.out.println("2. View Cart");
-            System.out.println("3. Update Item Quantity");
-            System.out.println("4. Remove Item from Cart");
-            System.out.println("5. Apply Coupon");
-            System.out.println("6. Checkout");
-            System.out.println("7. Exit");
+            System.out.println("3. Manage Cart (Update/Remove Items)");
+            System.out.println("4. Apply Coupon");
+            System.out.println("5. Checkout");
+            System.out.println("6. Exit");
             System.out.print("Select an option: ");
 
             String choice = scanner.nextLine().trim();
@@ -53,26 +52,23 @@ public class Main {
                         viewCart();
                         break;
                     case "3":
-                        updateQuantity(scanner);
+                        manageCart(scanner);
                         break;
                     case "4":
-                        removeItem(scanner);
-                        break;
-                    case "5":
                         applyCoupon(scanner);
                         break;
-                    case "6":
+                    case "5":
                         if (checkout()) {
                             // After successful checkout, update the inventory in the CSV file
                             FileHandler.saveProducts(productsFile, catalog);
                         }
                         break;
-                    case "7":
+                    case "6":
                         running = false;
                         System.out.println("Thank you for shopping with us! Goodbye.");
                         break;
                     default:
-                        System.out.println("Invalid option. Please enter a number between 1 and 7.");
+                        System.out.println("Invalid option. Please enter a number between 1 and 6.");
                 }
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
@@ -233,6 +229,43 @@ public class Main {
         }
         cart.applyCoupon(coupons.get(selectedCode), currentDate);
         System.out.println("Coupon applied successfully!");
+    }
+
+    private static void manageCart(Scanner scanner) {
+        if (cart.getItems().isEmpty()) {
+            System.out.println("Your cart is empty.");
+            return;
+        }
+
+        boolean managing = true;
+        while (managing) {
+            System.out.println("\n--- Manage Cart ---");
+            System.out.println("1. Update Item Quantity");
+            System.out.println("2. Remove Item from Cart");
+            System.out.println("3. Back to Main Menu");
+            System.out.print("Select an option: ");
+
+            String choice = scanner.nextLine().trim();
+
+            switch (choice) {
+                case "1":
+                    updateQuantity(scanner);
+                    break;
+                case "2":
+                    removeItem(scanner);
+                    break;
+                case "3":
+                    managing = false;
+                    break;
+                default:
+                    System.out.println("Invalid option. Please enter 1, 2, or 3.");
+            }
+
+            if (managing) {
+                System.out.print("\nPress Enter to continue...");
+                scanner.nextLine();
+            }
+        }
     }
 
     private static boolean checkout() {
