@@ -10,18 +10,38 @@ public class FileHandler {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             boolean isHeader = true;
+            boolean hasCategory = false;
             while ((line = br.readLine()) != null) {
                 if (isHeader) {
                     isHeader = false;
+                    if (line.toLowerCase().contains("category")) {
+                        hasCategory = true;
+                    }
                     continue;
                 }
                 String[] values = line.split(",");
-                if (values.length >= 4) {
-                    String id = values[0].trim();
-                    String name = values[1].trim();
-                    double price = Double.parseDouble(values[2].trim());
-                    int stock = Integer.parseInt(values[3].trim());
-                    products.put(id, new Product(id, name, price, stock));
+                if (values.length >= 3) {
+                    try {
+                        String id = values[0].trim();
+                        String name = values[1].trim();
+                        double price = 0.0;
+                        int stock = 50; // Default stock
+
+                        if (hasCategory && values.length >= 4) {
+                            price = Double.parseDouble(values[3].trim());
+                            if (values.length >= 5) {
+                                stock = Integer.parseInt(values[4].trim());
+                            }
+                        } else if (!hasCategory && values.length >= 3) {
+                            price = Double.parseDouble(values[2].trim());
+                            if (values.length >= 4) {
+                                stock = Integer.parseInt(values[3].trim());
+                            }
+                        }
+                        products.put(id, new Product(id, name, price, stock));
+                    } catch (NumberFormatException e) {
+                        System.err.println("Error parsing numeric value for product: " + line);
+                    }
                 }
             }
         } catch (IOException e) {

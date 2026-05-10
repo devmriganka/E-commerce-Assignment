@@ -1,9 +1,1001 @@
 id,name,price,stock
-P01,Laptop,50000.0,5
-P02,Keyboard,500.0,1
-P03,Mouse,300.0,3
-P04,Monitor,100.0,10
-P05,Headphones,200.0,10
-P06,Webcam,300.0,10
-P07,PrecisionItem,333.33,10
-P08,ExpensiveItem,5000.0,10
+P001,Apple Laptop,85000.0,48
+P002,Apple Smartphone,65000.0,50
+P003,Apple Tablet,45000.0,50
+P004,Apple Monitor,75000.0,50
+P005,Apple Smartwatch,35000.0,50
+P006,Apple Headphones,25000.0,50
+P007,Apple Earbuds,18000.0,50
+P008,Apple Keyboard,8000.0,50
+P009,Apple Mouse,6000.0,50
+P010,Apple Charger,2500.0,50
+P011,Samsung Laptop,65000.0,50
+P012,Samsung Smartphone,55000.0,50
+P013,Samsung Tablet,35000.0,50
+P014,Samsung Monitor,25000.0,50
+P015,Samsung Smartwatch,20000.0,50
+P016,Samsung Headphones,12000.0,50
+P017,Samsung Earbuds,10000.0,50
+P018,Samsung Keyboard,4000.0,50
+P019,Samsung Mouse,2500.0,50
+P020,Samsung Charger,1500.0,50
+P021,Sony Laptop,70000.0,50
+P022,Sony Smartphone,60000.0,50
+P023,Sony Tablet,40000.0,50
+P024,Sony Monitor,30000.0,50
+P025,Sony Smartwatch,22000.0,50
+P026,Sony Headphones,25000.0,50
+P027,Sony Earbuds,15000.0,50
+P028,Sony Keyboard,5000.0,50
+P029,Sony Mouse,3000.0,50
+P030,Sony Charger,2000.0,50
+P031,Dell Laptop,55000.0,50
+P032,Dell Smartphone,35000.0,50
+P033,Dell Tablet,25000.0,50
+P034,Dell Monitor,18000.0,50
+P035,Dell Smartwatch,15000.0,50
+P036,Dell Headphones,8000.0,50
+P037,Dell Earbuds,6000.0,50
+P038,Dell Keyboard,3000.0,50
+P039,Dell Mouse,1500.0,50
+P040,Dell Charger,1000.0,50
+P041,HP Laptop,52000.0,50
+P042,HP Smartphone,32000.0,50
+P043,HP Tablet,22000.0,50
+P044,HP Monitor,16000.0,50
+P045,HP Smartwatch,14000.0,50
+P046,HP Headphones,7500.0,50
+P047,HP Earbuds,5500.0,50
+P048,HP Keyboard,2500.0,50
+P049,HP Mouse,1200.0,50
+P050,HP Charger,900.0,50
+P051,Lenovo Laptop,48000.0,50
+P052,Lenovo Smartphone,30000.0,50
+P053,Lenovo Tablet,20000.0,50
+P054,Lenovo Monitor,15000.0,50
+P055,Lenovo Smartwatch,12000.0,50
+P056,Lenovo Headphones,6000.0,50
+P057,Lenovo Earbuds,4500.0,50
+P058,Lenovo Keyboard,2000.0,50
+P059,Lenovo Mouse,1000.0,50
+P060,Lenovo Charger,800.0,50
+P061,LG Laptop,58000.0,50
+P062,LG Smartphone,45000.0,50
+P063,LG Tablet,28000.0,50
+P064,LG Monitor,22000.0,50
+P065,LG Smartwatch,18000.0,50
+P066,LG Headphones,9000.0,50
+P067,LG Earbuds,7000.0,50
+P068,LG Keyboard,3500.0,50
+P069,LG Mouse,1800.0,50
+P070,LG Charger,1200.0,50
+P071,Asus Laptop,54000.0,50
+P072,Asus Smartphone,38000.0,50
+P073,Asus Tablet,24000.0,50
+P074,Asus Monitor,19000.0,50
+P075,Asus Smartwatch,16000.0,50
+P076,Asus Headphones,8500.0,50
+P077,Asus Earbuds,6500.0,50
+P078,Asus Keyboard,3200.0,50
+P079,Asus Mouse,1600.0,50
+P080,Asus Charger,1100.0,50
+P081,Acer Laptop,46000.0,50
+P082,Acer Smartphone,28000.0,50
+P083,Acer Tablet,18000.0,50
+P084,Acer Monitor,14000.0,50
+P085,Acer Smartwatch,11000.0,50
+P086,Acer Headphones,5500.0,50
+P087,Acer Earbuds,4000.0,50
+P088,Acer Keyboard,1800.0,50
+P089,Acer Mouse,900.0,50
+P090,Acer Charger,700.0,50
+P091,Microsoft Laptop,75000.0,50
+P092,Microsoft Smartphone,60000.0,50
+P093,Microsoft Tablet,50000.0,50
+P094,Microsoft Monitor,40000.0,50
+P095,Microsoft Smartwatch,25000.0,50
+P096,Microsoft Headphones,20000.0,50
+P097,Microsoft Earbuds,15000.0,50
+P098,Microsoft Keyboard,6000.0,50
+P099,Microsoft Mouse,4000.0,50
+P100,Microsoft Charger,3000.0,50
+P101,Nike Running Shoes,4500.0,50
+P102,Nike Sneakers,5000.0,50
+P103,Nike T-Shirt,1200.0,50
+P104,Nike Shorts,1500.0,50
+P105,Nike Trackpants,2500.0,50
+P106,Nike Jacket,4000.0,50
+P107,Nike Hoodie,3500.0,50
+P108,Nike Cap,800.0,50
+P109,Nike Socks,400.0,50
+P110,Nike Gym Bag,2000.0,50
+P111,Adidas Running Shoes,4200.0,50
+P112,Adidas Sneakers,4800.0,50
+P113,Adidas T-Shirt,1100.0,50
+P114,Adidas Shorts,1400.0,50
+P115,Adidas Trackpants,2300.0,50
+P116,Adidas Jacket,3800.0,50
+P117,Adidas Hoodie,3200.0,50
+P118,Adidas Cap,700.0,50
+P119,Adidas Socks,350.0,50
+P120,Adidas Gym Bag,1800.0,50
+P121,Puma Running Shoes,3500.0,50
+P122,Puma Sneakers,4000.0,50
+P123,Puma T-Shirt,900.0,50
+P124,Puma Shorts,1100.0,50
+P125,Puma Trackpants,1800.0,50
+P126,Puma Jacket,3000.0,50
+P127,Puma Hoodie,2500.0,50
+P128,Puma Cap,600.0,50
+P129,Puma Socks,300.0,50
+P130,Puma Gym Bag,1500.0,50
+P131,Reebok Running Shoes,3200.0,50
+P132,Reebok Sneakers,3800.0,50
+P133,Reebok T-Shirt,800.0,50
+P134,Reebok Shorts,1000.0,50
+P135,Reebok Trackpants,1600.0,50
+P136,Reebok Jacket,2800.0,50
+P137,Reebok Hoodie,2200.0,50
+P138,Reebok Cap,500.0,50
+P139,Reebok Socks,250.0,50
+P140,Reebok Gym Bag,1200.0,50
+P141,Under Armour Running Shoes,4800.0,50
+P142,Under Armour Sneakers,5500.0,50
+P143,Under Armour T-Shirt,1500.0,50
+P144,Under Armour Shorts,1800.0,50
+P145,Under Armour Trackpants,2800.0,50
+P146,Under Armour Jacket,4500.0,50
+P147,Under Armour Hoodie,3800.0,50
+P148,Under Armour Cap,900.0,50
+P149,Under Armour Socks,500.0,50
+P150,Under Armour Gym Bag,2200.0,50
+P151,New Balance Running Shoes,4000.0,50
+P152,New Balance Sneakers,4500.0,50
+P153,New Balance T-Shirt,1000.0,50
+P154,New Balance Shorts,1200.0,50
+P155,New Balance Trackpants,2000.0,50
+P156,New Balance Jacket,3500.0,50
+P157,New Balance Hoodie,2800.0,50
+P158,New Balance Cap,650.0,50
+P159,New Balance Socks,350.0,50
+P160,New Balance Gym Bag,1600.0,50
+P161,Asics Running Shoes,5000.0,50
+P162,Asics Sneakers,5200.0,50
+P163,Asics T-Shirt,1300.0,50
+P164,Asics Shorts,1600.0,50
+P165,Asics Trackpants,2600.0,50
+P166,Asics Jacket,4200.0,50
+P167,Asics Hoodie,3600.0,50
+P168,Asics Cap,850.0,50
+P169,Asics Socks,450.0,50
+P170,Asics Gym Bag,2100.0,50
+P171,Fila Running Shoes,2800.0,50
+P172,Fila Sneakers,3200.0,50
+P173,Fila T-Shirt,700.0,50
+P174,Fila Shorts,900.0,50
+P175,Fila Trackpants,1400.0,50
+P176,Fila Jacket,2500.0,50
+P177,Fila Hoodie,2000.0,50
+P178,Fila Cap,450.0,50
+P179,Fila Socks,200.0,50
+P180,Fila Gym Bag,1000.0,50
+P181,Skechers Running Shoes,3600.0,50
+P182,Skechers Sneakers,4100.0,50
+P183,Skechers T-Shirt,850.0,50
+P184,Skechers Shorts,1050.0,50
+P185,Skechers Trackpants,1700.0,50
+P186,Skechers Jacket,2900.0,50
+P187,Skechers Hoodie,2400.0,50
+P188,Skechers Cap,550.0,50
+P189,Skechers Socks,280.0,50
+P190,Skechers Gym Bag,1300.0,50
+P191,Converse Running Shoes,2500.0,50
+P192,Converse Sneakers,3500.0,50
+P193,Converse T-Shirt,750.0,50
+P194,Converse Shorts,950.0,50
+P195,Converse Trackpants,1500.0,50
+P196,Converse Jacket,2600.0,50
+P197,Converse Hoodie,2100.0,50
+P198,Converse Cap,480.0,50
+P199,Converse Socks,220.0,50
+P200,Converse Gym Bag,1100.0,50
+P201,Sony Gaming Mouse,3500.0,50
+P202,Sony Mechanical Keyboard,7000.0,50
+P203,Sony Headset,8000.0,50
+P204,Sony Mousepad,1000.0,50
+P205,Sony Controller,5000.0,50
+P206,Sony Console,50000.0,50
+P207,Sony Gaming Chair,15000.0,50
+P208,Sony Webcam,4000.0,50
+P209,Sony Microphone,6000.0,50
+P210,Sony Gaming Monitor,25000.0,50
+P211,Microsoft Gaming Mouse,3000.0,50
+P212,Microsoft Mechanical Keyboard,6500.0,50
+P213,Microsoft Headset,7500.0,50
+P214,Microsoft Mousepad,800.0,50
+P215,Microsoft Controller,4500.0,50
+P216,Microsoft Console,48000.0,50
+P217,Microsoft Gaming Chair,14000.0,50
+P218,Microsoft Webcam,3500.0,50
+P219,Microsoft Microphone,5500.0,50
+P220,Microsoft Gaming Monitor,23000.0,50
+P221,Nintendo Gaming Mouse,2500.0,50
+P222,Nintendo Mechanical Keyboard,5000.0,50
+P223,Nintendo Headset,6000.0,50
+P224,Nintendo Mousepad,600.0,50
+P225,Nintendo Controller,4000.0,50
+P226,Nintendo Console,30000.0,50
+P227,Nintendo Gaming Chair,12000.0,50
+P228,Nintendo Webcam,2500.0,50
+P229,Nintendo Microphone,4000.0,50
+P230,Nintendo Gaming Monitor,18000.0,50
+P231,Razer Gaming Mouse,5000.0,50
+P232,Razer Mechanical Keyboard,10000.0,50
+P233,Razer Headset,12000.0,50
+P234,Razer Mousepad,1500.0,50
+P235,Razer Controller,6000.0,50
+P236,Razer Console,45000.0,50
+P237,Razer Gaming Chair,20000.0,50
+P238,Razer Webcam,5000.0,50
+P239,Razer Microphone,8000.0,50
+P240,Razer Gaming Monitor,30000.0,50
+P241,Corsair Gaming Mouse,4500.0,50
+P242,Corsair Mechanical Keyboard,9000.0,50
+P243,Corsair Headset,10000.0,50
+P244,Corsair Mousepad,1200.0,50
+P245,Corsair Controller,5500.0,50
+P246,Corsair Console,42000.0,50
+P247,Corsair Gaming Chair,18000.0,50
+P248,Corsair Webcam,4500.0,50
+P249,Corsair Microphone,7000.0,50
+P250,Corsair Gaming Monitor,28000.0,50
+P251,HyperX Gaming Mouse,4000.0,50
+P252,HyperX Mechanical Keyboard,8000.0,50
+P253,HyperX Headset,9000.0,50
+P254,HyperX Mousepad,1100.0,50
+P255,HyperX Controller,5000.0,50
+P256,HyperX Console,38000.0,50
+P257,HyperX Gaming Chair,16000.0,50
+P258,HyperX Webcam,3800.0,50
+P259,HyperX Microphone,6500.0,50
+P260,HyperX Gaming Monitor,26000.0,50
+P261,SteelSeries Gaming Mouse,4200.0,50
+P262,SteelSeries Mechanical Keyboard,8500.0,50
+P263,SteelSeries Headset,9500.0,50
+P264,SteelSeries Mousepad,1300.0,50
+P265,SteelSeries Controller,5200.0,50
+P266,SteelSeries Console,40000.0,50
+P267,SteelSeries Gaming Chair,17000.0,50
+P268,SteelSeries Webcam,4200.0,50
+P269,SteelSeries Microphone,6800.0,50
+P270,SteelSeries Gaming Monitor,27000.0,50
+P271,Logitech Gaming Mouse,4800.0,50
+P272,Logitech Mechanical Keyboard,9500.0,50
+P273,Logitech Headset,11000.0,50
+P274,Logitech Mousepad,1400.0,50
+P275,Logitech Controller,5800.0,50
+P276,Logitech Console,44000.0,50
+P277,Logitech Gaming Chair,19000.0,50
+P278,Logitech Webcam,4800.0,50
+P279,Logitech Microphone,7500.0,50
+P280,Logitech Gaming Monitor,29000.0,50
+P281,MSI Gaming Mouse,3800.0,50
+P282,MSI Mechanical Keyboard,7500.0,50
+P283,MSI Headset,8500.0,50
+P284,MSI Mousepad,900.0,50
+P285,MSI Controller,4800.0,50
+P286,MSI Console,36000.0,50
+P287,MSI Gaming Chair,15000.0,50
+P288,MSI Webcam,3600.0,50
+P289,MSI Microphone,6200.0,50
+P290,MSI Gaming Monitor,24000.0,50
+P291,Alienware Gaming Mouse,5500.0,50
+P292,Alienware Mechanical Keyboard,12000.0,50
+P293,Alienware Headset,14000.0,50
+P294,Alienware Mousepad,1800.0,50
+P295,Alienware Controller,6500.0,50
+P296,Alienware Console,55000.0,50
+P297,Alienware Gaming Chair,25000.0,50
+P298,Alienware Webcam,6000.0,50
+P299,Alienware Microphone,9000.0,50
+P300,Alienware Gaming Monitor,35000.0,50
+P301,IKEA Office Chair,8000.0,50
+P302,IKEA Desk,12000.0,50
+P303,IKEA Bookshelf,6000.0,50
+P304,IKEA Lamp,1500.0,50
+P305,IKEA Sofa,25000.0,50
+P306,IKEA Coffee Table,5000.0,50
+P307,IKEA Dining Table,18000.0,50
+P308,IKEA Bed Frame,20000.0,50
+P309,IKEA Nightstand,3000.0,50
+P310,IKEA Dresser,10000.0,50
+P311,Ashley Office Chair,10000.0,50
+P312,Ashley Desk,15000.0,50
+P313,Ashley Bookshelf,8000.0,50
+P314,Ashley Lamp,2000.0,50
+P315,Ashley Sofa,35000.0,50
+P316,Ashley Coffee Table,7000.0,50
+P317,Ashley Dining Table,25000.0,50
+P318,Ashley Bed Frame,28000.0,50
+P319,Ashley Nightstand,4500.0,50
+P320,Ashley Dresser,14000.0,50
+P321,Wayfair Office Chair,9000.0,50
+P322,Wayfair Desk,14000.0,50
+P323,Wayfair Bookshelf,7500.0,50
+P324,Wayfair Lamp,1800.0,50
+P325,Wayfair Sofa,32000.0,50
+P326,Wayfair Coffee Table,6500.0,50
+P327,Wayfair Dining Table,22000.0,50
+P328,Wayfair Bed Frame,25000.0,50
+P329,Wayfair Nightstand,4000.0,50
+P330,Wayfair Dresser,12000.0,50
+P331,Herman Miller Office Chair,50000.0,50
+P332,Herman Miller Desk,60000.0,50
+P333,Herman Miller Bookshelf,30000.0,50
+P334,Herman Miller Lamp,8000.0,50
+P335,Herman Miller Sofa,80000.0,50
+P336,Herman Miller Coffee Table,20000.0,50
+P337,Herman Miller Dining Table,70000.0,50
+P338,Herman Miller Bed Frame,90000.0,50
+P339,Herman Miller Nightstand,15000.0,50
+P340,Herman Miller Dresser,45000.0,50
+P341,Steelcase Office Chair,45000.0,50
+P342,Steelcase Desk,55000.0,50
+P343,Steelcase Bookshelf,28000.0,50
+P344,Steelcase Lamp,7000.0,50
+P345,Steelcase Sofa,75000.0,50
+P346,Steelcase Coffee Table,18000.0,50
+P347,Steelcase Dining Table,65000.0,50
+P348,Steelcase Bed Frame,85000.0,50
+P349,Steelcase Nightstand,14000.0,50
+P350,Steelcase Dresser,40000.0,50
+P351,West Elm Office Chair,15000.0,50
+P352,West Elm Desk,20000.0,50
+P353,West Elm Bookshelf,12000.0,50
+P354,West Elm Lamp,3000.0,50
+P355,West Elm Sofa,45000.0,50
+P356,West Elm Coffee Table,10000.0,50
+P357,West Elm Dining Table,35000.0,50
+P358,West Elm Bed Frame,40000.0,50
+P359,West Elm Nightstand,6000.0,50
+P360,West Elm Dresser,20000.0,50
+P361,Pottery Barn Office Chair,18000.0,50
+P362,Pottery Barn Desk,25000.0,50
+P363,Pottery Barn Bookshelf,15000.0,50
+P364,Pottery Barn Lamp,4000.0,50
+P365,Pottery Barn Sofa,55000.0,50
+P366,Pottery Barn Coffee Table,12000.0,50
+P367,Pottery Barn Dining Table,45000.0,50
+P368,Pottery Barn Bed Frame,50000.0,50
+P369,Pottery Barn Nightstand,8000.0,50
+P370,Pottery Barn Dresser,25000.0,50
+P371,CB2 Office Chair,16000.0,50
+P372,CB2 Desk,22000.0,50
+P373,CB2 Bookshelf,13000.0,50
+P374,CB2 Lamp,3500.0,50
+P375,CB2 Sofa,48000.0,50
+P376,CB2 Coffee Table,11000.0,50
+P377,CB2 Dining Table,40000.0,50
+P378,CB2 Bed Frame,45000.0,50
+P379,CB2 Nightstand,7000.0,50
+P380,CB2 Dresser,22000.0,50
+P381,Crate & Barrel Office Chair,17000.0,50
+P382,Crate & Barrel Desk,24000.0,50
+P383,Crate & Barrel Bookshelf,14000.0,50
+P384,Crate & Barrel Lamp,3800.0,50
+P385,Crate & Barrel Sofa,52000.0,50
+P386,Crate & Barrel Coffee Table,11500.0,50
+P387,Crate & Barrel Dining Table,42000.0,50
+P388,Crate & Barrel Bed Frame,48000.0,50
+P389,Crate & Barrel Nightstand,7500.0,50
+P390,Crate & Barrel Dresser,24000.0,50
+P391,Target Office Chair,5000.0,50
+P392,Target Desk,8000.0,50
+P393,Target Bookshelf,4000.0,50
+P394,Target Lamp,1000.0,50
+P395,Target Sofa,18000.0,50
+P396,Target Coffee Table,3500.0,50
+P397,Target Dining Table,12000.0,50
+P398,Target Bed Frame,15000.0,50
+P399,Target Nightstand,2000.0,50
+P400,Target Dresser,7000.0,50
+P401,Philips Blender,3500.0,50
+P402,Philips Toaster,2000.0,50
+P403,Philips Microwave,8000.0,50
+P404,Philips Coffee Maker,4500.0,50
+P405,Philips Vacuum Cleaner,9000.0,50
+P406,Philips Air Purifier,12000.0,50
+P407,Philips Electric Kettle,1500.0,50
+P408,Philips Mixer,4000.0,50
+P409,Philips Food Processor,6500.0,50
+P410,Philips Iron,1200.0,50
+P411,Bosch Blender,4000.0,50
+P412,Bosch Toaster,2500.0,50
+P413,Bosch Microwave,9000.0,50
+P414,Bosch Coffee Maker,5000.0,50
+P415,Bosch Vacuum Cleaner,10000.0,50
+P416,Bosch Air Purifier,14000.0,50
+P417,Bosch Electric Kettle,1800.0,50
+P418,Bosch Mixer,4500.0,50
+P419,Bosch Food Processor,7000.0,50
+P420,Bosch Iron,1500.0,50
+P421,LG Blender,3800.0,50
+P422,LG Toaster,2200.0,50
+P423,LG Microwave,8500.0,50
+P424,LG Coffee Maker,4800.0,50
+P425,LG Vacuum Cleaner,9500.0,50
+P426,LG Air Purifier,13000.0,50
+P427,LG Electric Kettle,1600.0,50
+P428,LG Mixer,4200.0,50
+P429,LG Food Processor,6800.0,50
+P430,LG Iron,1400.0,50
+P431,Samsung Blender,4200.0,50
+P432,Samsung Toaster,2600.0,50
+P433,Samsung Microwave,9500.0,50
+P434,Samsung Coffee Maker,5500.0,50
+P435,Samsung Vacuum Cleaner,11000.0,50
+P436,Samsung Air Purifier,15000.0,50
+P437,Samsung Electric Kettle,2000.0,50
+P438,Samsung Mixer,4800.0,50
+P439,Samsung Food Processor,7500.0,50
+P440,Samsung Iron,1600.0,50
+P441,Whirlpool Blender,3200.0,50
+P442,Whirlpool Toaster,1800.0,50
+P443,Whirlpool Microwave,7500.0,50
+P444,Whirlpool Coffee Maker,4000.0,50
+P445,Whirlpool Vacuum Cleaner,8000.0,50
+P446,Whirlpool Air Purifier,11000.0,50
+P447,Whirlpool Electric Kettle,1400.0,50
+P448,Whirlpool Mixer,3800.0,50
+P449,Whirlpool Food Processor,6000.0,50
+P450,Whirlpool Iron,1100.0,50
+P451,Panasonic Blender,3600.0,50
+P452,Panasonic Toaster,2100.0,50
+P453,Panasonic Microwave,8200.0,50
+P454,Panasonic Coffee Maker,4600.0,50
+P455,Panasonic Vacuum Cleaner,9200.0,50
+P456,Panasonic Air Purifier,12500.0,50
+P457,Panasonic Electric Kettle,1700.0,50
+P458,Panasonic Mixer,4100.0,50
+P459,Panasonic Food Processor,6600.0,50
+P460,Panasonic Iron,1300.0,50
+P461,Dyson Blender,15000.0,50
+P462,Dyson Toaster,8000.0,50
+P463,Dyson Microwave,25000.0,50
+P464,Dyson Coffee Maker,18000.0,50
+P465,Dyson Vacuum Cleaner,45000.0,50
+P466,Dyson Air Purifier,35000.0,50
+P467,Dyson Electric Kettle,6000.0,50
+P468,Dyson Mixer,12000.0,50
+P469,Dyson Food Processor,20000.0,50
+P470,Dyson Iron,5000.0,50
+P471,KitchenAid Blender,8000.0,50
+P472,KitchenAid Toaster,5000.0,50
+P473,KitchenAid Microwave,15000.0,50
+P474,KitchenAid Coffee Maker,10000.0,50
+P475,KitchenAid Vacuum Cleaner,20000.0,50
+P476,KitchenAid Air Purifier,18000.0,50
+P477,KitchenAid Electric Kettle,4000.0,50
+P478,KitchenAid Mixer,35000.0,50
+P479,KitchenAid Food Processor,12000.0,50
+P480,KitchenAid Iron,3000.0,50
+P481,Breville Blender,9000.0,50
+P482,Breville Toaster,6000.0,50
+P483,Breville Microwave,18000.0,50
+P484,Breville Coffee Maker,12000.0,50
+P485,Breville Vacuum Cleaner,22000.0,50
+P486,Breville Air Purifier,20000.0,50
+P487,Breville Electric Kettle,5000.0,50
+P488,Breville Mixer,15000.0,50
+P489,Breville Food Processor,14000.0,50
+P490,Breville Iron,3500.0,50
+P491,Cuisinart Blender,6000.0,50
+P492,Cuisinart Toaster,3500.0,50
+P493,Cuisinart Microwave,12000.0,50
+P494,Cuisinart Coffee Maker,7000.0,50
+P495,Cuisinart Vacuum Cleaner,15000.0,50
+P496,Cuisinart Air Purifier,16000.0,50
+P497,Cuisinart Electric Kettle,3000.0,50
+P498,Cuisinart Mixer,10000.0,50
+P499,Cuisinart Food Processor,9000.0,50
+P500,Cuisinart Iron,2500.0,50
+P501,Pilot Ballpoint Pen,50.0,50
+P502,Pilot Fountain Pen,250.0,50
+P503,Pilot Notebook,120.0,50
+P504,Pilot Sketchbook,150.0,50
+P505,Pilot Highlighter Set,180.0,50
+P506,Pilot Mechanical Pencil,80.0,50
+P507,Pilot Eraser,20.0,50
+P508,Pilot Ruler,30.0,50
+P509,Pilot Marker Set,200.0,50
+P510,Pilot Pencil Case,100.0,50
+P511,Parker Ballpoint Pen,300.0,50
+P512,Parker Fountain Pen,800.0,50
+P513,Parker Notebook,250.0,50
+P514,Parker Sketchbook,300.0,50
+P515,Parker Highlighter Set,250.0,50
+P516,Parker Mechanical Pencil,150.0,50
+P517,Parker Eraser,40.0,50
+P518,Parker Ruler,50.0,50
+P519,Parker Marker Set,350.0,50
+P520,Parker Pencil Case,200.0,50
+P521,Lamy Ballpoint Pen,400.0,50
+P522,Lamy Fountain Pen,1200.0,50
+P523,Lamy Notebook,350.0,50
+P524,Lamy Sketchbook,450.0,50
+P525,Lamy Highlighter Set,300.0,50
+P526,Lamy Mechanical Pencil,200.0,50
+P527,Lamy Eraser,50.0,50
+P528,Lamy Ruler,60.0,50
+P529,Lamy Marker Set,400.0,50
+P530,Lamy Pencil Case,250.0,50
+P531,Faber-Castell Ballpoint Pen,80.0,50
+P532,Faber-Castell Fountain Pen,350.0,50
+P533,Faber-Castell Notebook,150.0,50
+P534,Faber-Castell Sketchbook,200.0,50
+P535,Faber-Castell Highlighter Set,120.0,50
+P536,Faber-Castell Mechanical Pencil,60.0,50
+P537,Faber-Castell Eraser,25.0,50
+P538,Faber-Castell Ruler,35.0,50
+P539,Faber-Castell Marker Set,180.0,50
+P540,Faber-Castell Pencil Case,120.0,50
+P541,Staedtler Ballpoint Pen,60.0,50
+P542,Staedtler Fountain Pen,300.0,50
+P543,Staedtler Notebook,140.0,50
+P544,Staedtler Sketchbook,180.0,50
+P545,Staedtler Highlighter Set,110.0,50
+P546,Staedtler Mechanical Pencil,50.0,50
+P547,Staedtler Eraser,22.0,50
+P548,Staedtler Ruler,32.0,50
+P549,Staedtler Marker Set,160.0,50
+P550,Staedtler Pencil Case,110.0,50
+P551,Moleskine Ballpoint Pen,500.0,50
+P552,Moleskine Fountain Pen,1500.0,50
+P553,Moleskine Notebook,800.0,50
+P554,Moleskine Sketchbook,900.0,50
+P555,Moleskine Highlighter Set,400.0,50
+P556,Moleskine Mechanical Pencil,350.0,50
+P557,Moleskine Eraser,80.0,50
+P558,Moleskine Ruler,100.0,50
+P559,Moleskine Marker Set,600.0,50
+P560,Moleskine Pencil Case,400.0,50
+P561,Sharpie Ballpoint Pen,40.0,50
+P562,Sharpie Fountain Pen,200.0,50
+P563,Sharpie Notebook,100.0,50
+P564,Sharpie Sketchbook,120.0,50
+P565,Sharpie Highlighter Set,150.0,50
+P566,Sharpie Mechanical Pencil,70.0,50
+P567,Sharpie Eraser,15.0,50
+P568,Sharpie Ruler,20.0,50
+P569,Sharpie Marker Set,250.0,50
+P570,Sharpie Pencil Case,90.0,50
+P571,BIC Ballpoint Pen,20.0,50
+P572,BIC Fountain Pen,100.0,50
+P573,BIC Notebook,80.0,50
+P574,BIC Sketchbook,100.0,50
+P575,BIC Highlighter Set,90.0,50
+P576,BIC Mechanical Pencil,40.0,50
+P577,BIC Eraser,10.0,50
+P578,BIC Ruler,15.0,50
+P579,BIC Marker Set,120.0,50
+P580,BIC Pencil Case,60.0,50
+P581,Paper Mate Ballpoint Pen,30.0,50
+P582,Paper Mate Fountain Pen,150.0,50
+P583,Paper Mate Notebook,90.0,50
+P584,Paper Mate Sketchbook,110.0,50
+P585,Paper Mate Highlighter Set,100.0,50
+P586,Paper Mate Mechanical Pencil,45.0,50
+P587,Paper Mate Eraser,12.0,50
+P588,Paper Mate Ruler,18.0,50
+P589,Paper Mate Marker Set,140.0,50
+P590,Paper Mate Pencil Case,70.0,50
+P591,Pentel Ballpoint Pen,70.0,50
+P592,Pentel Fountain Pen,280.0,50
+P593,Pentel Notebook,130.0,50
+P594,Pentel Sketchbook,160.0,50
+P595,Pentel Highlighter Set,130.0,50
+P596,Pentel Mechanical Pencil,90.0,50
+P597,Pentel Eraser,28.0,50
+P598,Pentel Ruler,38.0,50
+P599,Pentel Marker Set,190.0,50
+P600,Pentel Pencil Case,130.0,50
+P601,Lays Potato Chips,30.0,50
+P602,Lays Chocolate Bar,50.0,50
+P603,Lays Cookies,40.0,50
+P604,Lays Wafers,25.0,50
+P605,Lays Candy,10.0,50
+P606,Lays Dark Chocolate,80.0,50
+P607,Lays Milk Chocolate,70.0,50
+P608,Lays Gummy Bears,45.0,50
+P609,Lays Snack Pack,100.0,50
+P610,Lays Biscuits,35.0,50
+P611,Doritos Potato Chips,35.0,50
+P612,Doritos Chocolate Bar,55.0,50
+P613,Doritos Cookies,45.0,50
+P614,Doritos Wafers,30.0,50
+P615,Doritos Candy,15.0,50
+P616,Doritos Dark Chocolate,85.0,50
+P617,Doritos Milk Chocolate,75.0,50
+P618,Doritos Gummy Bears,50.0,50
+P619,Doritos Snack Pack,110.0,50
+P620,Doritos Biscuits,40.0,50
+P621,Pringles Potato Chips,90.0,50
+P622,Pringles Chocolate Bar,60.0,50
+P623,Pringles Cookies,50.0,50
+P624,Pringles Wafers,35.0,50
+P625,Pringles Candy,20.0,50
+P626,Pringles Dark Chocolate,90.0,50
+P627,Pringles Milk Chocolate,80.0,50
+P628,Pringles Gummy Bears,55.0,50
+P629,Pringles Snack Pack,120.0,50
+P630,Pringles Biscuits,45.0,50
+P631,Oreo Potato Chips,40.0,50
+P632,Oreo Chocolate Bar,65.0,50
+P633,Oreo Cookies,30.0,50
+P634,Oreo Wafers,40.0,50
+P635,Oreo Candy,25.0,50
+P636,Oreo Dark Chocolate,95.0,50
+P637,Oreo Milk Chocolate,85.0,50
+P638,Oreo Gummy Bears,60.0,50
+P639,Oreo Snack Pack,130.0,50
+P640,Oreo Biscuits,35.0,50
+P641,Cadbury Potato Chips,45.0,50
+P642,Cadbury Chocolate Bar,40.0,50
+P643,Cadbury Cookies,55.0,50
+P644,Cadbury Wafers,45.0,50
+P645,Cadbury Candy,30.0,50
+P646,Cadbury Dark Chocolate,100.0,50
+P647,Cadbury Milk Chocolate,90.0,50
+P648,Cadbury Gummy Bears,65.0,50
+P649,Cadbury Snack Pack,140.0,50
+P650,Cadbury Biscuits,55.0,50
+P651,Nestle Potato Chips,50.0,50
+P652,Nestle Chocolate Bar,45.0,50
+P653,Nestle Cookies,60.0,50
+P654,Nestle Wafers,50.0,50
+P655,Nestle Candy,35.0,50
+P656,Nestle Dark Chocolate,110.0,50
+P657,Nestle Milk Chocolate,100.0,50
+P658,Nestle Gummy Bears,70.0,50
+P659,Nestle Snack Pack,150.0,50
+P660,Nestle Biscuits,60.0,50
+P661,Hershey Potato Chips,55.0,50
+P662,Hershey Chocolate Bar,50.0,50
+P663,Hershey Cookies,65.0,50
+P664,Hershey Wafers,55.0,50
+P665,Hershey Candy,40.0,50
+P666,Hershey Dark Chocolate,120.0,50
+P667,Hershey Milk Chocolate,110.0,50
+P668,Hershey Gummy Bears,75.0,50
+P669,Hershey Snack Pack,160.0,50
+P670,Hershey Biscuits,65.0,50
+P671,Ferrero Potato Chips,60.0,50
+P672,Ferrero Chocolate Bar,150.0,50
+P673,Ferrero Cookies,70.0,50
+P674,Ferrero Wafers,60.0,50
+P675,Ferrero Candy,45.0,50
+P676,Ferrero Dark Chocolate,130.0,50
+P677,Ferrero Milk Chocolate,120.0,50
+P678,Ferrero Gummy Bears,80.0,50
+P679,Ferrero Snack Pack,170.0,50
+P680,Ferrero Biscuits,70.0,50
+P681,Mars Potato Chips,65.0,50
+P682,Mars Chocolate Bar,60.0,50
+P683,Mars Cookies,75.0,50
+P684,Mars Wafers,65.0,50
+P685,Mars Candy,50.0,50
+P686,Mars Dark Chocolate,140.0,50
+P687,Mars Milk Chocolate,130.0,50
+P688,Mars Gummy Bears,85.0,50
+P689,Mars Snack Pack,180.0,50
+P690,Mars Biscuits,75.0,50
+P691,Lindt Potato Chips,70.0,50
+P692,Lindt Chocolate Bar,200.0,50
+P693,Lindt Cookies,80.0,50
+P694,Lindt Wafers,70.0,50
+P695,Lindt Candy,55.0,50
+P696,Lindt Dark Chocolate,250.0,50
+P697,Lindt Milk Chocolate,240.0,50
+P698,Lindt Gummy Bears,90.0,50
+P699,Lindt Snack Pack,190.0,50
+P700,Lindt Biscuits,80.0,50
+P701,JBL Portable Speaker,3000.0,50
+P702,JBL Wireless Earbuds,4500.0,50
+P703,JBL Over-Ear Headphones,6000.0,50
+P704,JBL Soundbar,12000.0,50
+P705,JBL Home Theater,25000.0,50
+P706,JBL DJ Headphones,8000.0,50
+P707,JBL Studio Monitor,15000.0,50
+P708,JBL Party Speaker,20000.0,50
+P709,JBL Earphones,1500.0,50
+P710,JBL Amp,10000.0,50
+P711,Bose Portable Speaker,12000.0,50
+P712,Bose Wireless Earbuds,18000.0,50
+P713,Bose Over-Ear Headphones,25000.0,50
+P714,Bose Soundbar,45000.0,50
+P715,Bose Home Theater,85000.0,50
+P716,Bose DJ Headphones,30000.0,50
+P717,Bose Studio Monitor,55000.0,50
+P718,Bose Party Speaker,65000.0,50
+P719,Bose Earphones,6000.0,50
+P720,Bose Amp,35000.0,50
+P721,Sennheiser Portable Speaker,8000.0,50
+P722,Sennheiser Wireless Earbuds,15000.0,50
+P723,Sennheiser Over-Ear Headphones,22000.0,50
+P724,Sennheiser Soundbar,35000.0,50
+P725,Sennheiser Home Theater,70000.0,50
+P726,Sennheiser DJ Headphones,25000.0,50
+P727,Sennheiser Studio Monitor,45000.0,50
+P728,Sennheiser Party Speaker,55000.0,50
+P729,Sennheiser Earphones,5000.0,50
+P730,Sennheiser Amp,28000.0,50
+P731,Audio-Technica Portable Speaker,6000.0,50
+P732,Audio-Technica Wireless Earbuds,12000.0,50
+P733,Audio-Technica Over-Ear Headphones,18000.0,50
+P734,Audio-Technica Soundbar,28000.0,50
+P735,Audio-Technica Home Theater,60000.0,50
+P736,Audio-Technica DJ Headphones,20000.0,50
+P737,Audio-Technica Studio Monitor,38000.0,50
+P738,Audio-Technica Party Speaker,48000.0,50
+P739,Audio-Technica Earphones,4000.0,50
+P740,Audio-Technica Amp,22000.0,50
+P741,Beats Portable Speaker,10000.0,50
+P742,Beats Wireless Earbuds,16000.0,50
+P743,Beats Over-Ear Headphones,24000.0,50
+P744,Beats Soundbar,38000.0,50
+P745,Beats Home Theater,75000.0,50
+P746,Beats DJ Headphones,28000.0,50
+P747,Beats Studio Monitor,48000.0,50
+P748,Beats Party Speaker,58000.0,50
+P749,Beats Earphones,5500.0,50
+P750,Beats Amp,30000.0,50
+P751,Skullcandy Portable Speaker,4000.0,50
+P752,Skullcandy Wireless Earbuds,6000.0,50
+P753,Skullcandy Over-Ear Headphones,8000.0,50
+P754,Skullcandy Soundbar,15000.0,50
+P755,Skullcandy Home Theater,30000.0,50
+P756,Skullcandy DJ Headphones,10000.0,50
+P757,Skullcandy Studio Monitor,20000.0,50
+P758,Skullcandy Party Speaker,25000.0,50
+P759,Skullcandy Earphones,2000.0,50
+P760,Skullcandy Amp,12000.0,50
+P761,Jabra Portable Speaker,5000.0,50
+P762,Jabra Wireless Earbuds,10000.0,50
+P763,Jabra Over-Ear Headphones,14000.0,50
+P764,Jabra Soundbar,20000.0,50
+P765,Jabra Home Theater,40000.0,50
+P766,Jabra DJ Headphones,15000.0,50
+P767,Jabra Studio Monitor,25000.0,50
+P768,Jabra Party Speaker,32000.0,50
+P769,Jabra Earphones,3000.0,50
+P770,Jabra Amp,16000.0,50
+P771,Bang & Olufsen Portable Speaker,20000.0,50
+P772,Bang & Olufsen Wireless Earbuds,30000.0,50
+P773,Bang & Olufsen Over-Ear Headphones,40000.0,50
+P774,Bang & Olufsen Soundbar,60000.0,50
+P775,Bang & Olufsen Home Theater,120000.0,50
+P776,Bang & Olufsen DJ Headphones,45000.0,50
+P777,Bang & Olufsen Studio Monitor,80000.0,50
+P778,Bang & Olufsen Party Speaker,95000.0,50
+P779,Bang & Olufsen Earphones,15000.0,50
+P780,Bang & Olufsen Amp,50000.0,50
+P781,Bowers & Wilkins Portable Speaker,18000.0,50
+P782,Bowers & Wilkins Wireless Earbuds,28000.0,50
+P783,Bowers & Wilkins Over-Ear Headphones,38000.0,50
+P784,Bowers & Wilkins Soundbar,55000.0,50
+P785,Bowers & Wilkins Home Theater,110000.0,50
+P786,Bowers & Wilkins DJ Headphones,42000.0,50
+P787,Bowers & Wilkins Studio Monitor,75000.0,50
+P788,Bowers & Wilkins Party Speaker,85000.0,50
+P789,Bowers & Wilkins Earphones,12000.0,50
+P790,Bowers & Wilkins Amp,45000.0,50
+P791,Marshall Portable Speaker,15000.0,50
+P792,Marshall Wireless Earbuds,14000.0,50
+P793,Marshall Over-Ear Headphones,20000.0,50
+P794,Marshall Soundbar,30000.0,50
+P795,Marshall Home Theater,60000.0,50
+P796,Marshall DJ Headphones,22000.0,50
+P797,Marshall Studio Monitor,40000.0,50
+P798,Marshall Party Speaker,50000.0,50
+P799,Marshall Earphones,8000.0,50
+P800,Marshall Amp,25000.0,50
+P801,Canon DSLR Camera,45000.0,50
+P802,Canon Mirrorless Camera,65000.0,50
+P803,Canon Action Camera,20000.0,50
+P804,Canon Drone,80000.0,50
+P805,Canon Lens,35000.0,50
+P806,Canon Tripod,4000.0,50
+P807,Canon Camera Bag,2500.0,50
+P808,Canon Flash,8000.0,50
+P809,Canon SD Card,1500.0,50
+P810,Canon Gimbal,12000.0,50
+P811,Nikon DSLR Camera,42000.0,50
+P812,Nikon Mirrorless Camera,62000.0,50
+P813,Nikon Action Camera,18000.0,50
+P814,Nikon Drone,75000.0,50
+P815,Nikon Lens,32000.0,50
+P816,Nikon Tripod,3500.0,50
+P817,Nikon Camera Bag,2200.0,50
+P818,Nikon Flash,7500.0,50
+P819,Nikon SD Card,1200.0,50
+P820,Nikon Gimbal,11000.0,50
+P821,Sony DSLR Camera,48000.0,50
+P822,Sony Mirrorless Camera,70000.0,50
+P823,Sony Action Camera,25000.0,50
+P824,Sony Drone,85000.0,50
+P825,Sony Lens,40000.0,50
+P826,Sony Tripod,4500.0,50
+P827,Sony Camera Bag,3000.0,50
+P828,Sony Flash,9000.0,50
+P829,Sony SD Card,2000.0,50
+P830,Sony Gimbal,15000.0,50
+P831,Fujifilm DSLR Camera,46000.0,50
+P832,Fujifilm Mirrorless Camera,68000.0,50
+P833,Fujifilm Action Camera,22000.0,50
+P834,Fujifilm Drone,82000.0,50
+P835,Fujifilm Lens,38000.0,50
+P836,Fujifilm Tripod,4200.0,50
+P837,Fujifilm Camera Bag,2800.0,50
+P838,Fujifilm Flash,8500.0,50
+P839,Fujifilm SD Card,1800.0,50
+P840,Fujifilm Gimbal,14000.0,50
+P841,Panasonic DSLR Camera,44000.0,50
+P842,Panasonic Mirrorless Camera,64000.0,50
+P843,Panasonic Action Camera,19000.0,50
+P844,Panasonic Drone,78000.0,50
+P845,Panasonic Lens,34000.0,50
+P846,Panasonic Tripod,3800.0,50
+P847,Panasonic Camera Bag,2400.0,50
+P848,Panasonic Flash,7800.0,50
+P849,Panasonic SD Card,1400.0,50
+P850,Panasonic Gimbal,11500.0,50
+P851,Olympus DSLR Camera,40000.0,50
+P852,Olympus Mirrorless Camera,60000.0,50
+P853,Olympus Action Camera,17000.0,50
+P854,Olympus Drone,72000.0,50
+P855,Olympus Lens,30000.0,50
+P856,Olympus Tripod,3200.0,50
+P857,Olympus Camera Bag,2000.0,50
+P858,Olympus Flash,7000.0,50
+P859,Olympus SD Card,1000.0,50
+P860,Olympus Gimbal,10000.0,50
+P861,Leica DSLR Camera,85000.0,50
+P862,Leica Mirrorless Camera,120000.0,50
+P863,Leica Action Camera,40000.0,50
+P864,Leica Drone,150000.0,50
+P865,Leica Lens,80000.0,50
+P866,Leica Tripod,8000.0,50
+P867,Leica Camera Bag,6000.0,50
+P868,Leica Flash,15000.0,50
+P869,Leica SD Card,4000.0,50
+P870,Leica Gimbal,25000.0,50
+P871,GoPro DSLR Camera,35000.0,50
+P872,GoPro Mirrorless Camera,50000.0,50
+P873,GoPro Action Camera,30000.0,50
+P874,GoPro Drone,60000.0,50
+P875,GoPro Lens,20000.0,50
+P876,GoPro Tripod,2500.0,50
+P877,GoPro Camera Bag,1500.0,50
+P878,GoPro Flash,5000.0,50
+P879,GoPro SD Card,800.0,50
+P880,GoPro Gimbal,8000.0,50
+P881,DJI DSLR Camera,55000.0,50
+P882,DJI Mirrorless Camera,75000.0,50
+P883,DJI Action Camera,35000.0,50
+P884,DJI Drone,90000.0,50
+P885,DJI Lens,45000.0,50
+P886,DJI Tripod,5000.0,50
+P887,DJI Camera Bag,3500.0,50
+P888,DJI Flash,10000.0,50
+P889,DJI SD Card,2500.0,50
+P890,DJI Gimbal,18000.0,50
+P891,Insta360 DSLR Camera,38000.0,50
+P892,Insta360 Mirrorless Camera,55000.0,50
+P893,Insta360 Action Camera,32000.0,50
+P894,Insta360 Drone,65000.0,50
+P895,Insta360 Lens,25000.0,50
+P896,Insta360 Tripod,3000.0,50
+P897,Insta360 Camera Bag,1800.0,50
+P898,Insta360 Flash,6000.0,50
+P899,Insta360 SD Card,1200.0,50
+P900,Insta360 Gimbal,9000.0,50
+P901,Fitbit Fitness Tracker,8000.0,50
+P902,Fitbit GPS Watch,12000.0,50
+P903,Fitbit Heart Rate Monitor,5000.0,50
+P904,Fitbit Smart Scale,4000.0,50
+P905,Fitbit Running Watch,10000.0,50
+P906,Fitbit Triathlon Watch,15000.0,50
+P907,Fitbit Step Counter,2000.0,50
+P908,Fitbit Sleep Tracker,6000.0,50
+P909,Fitbit Activity Band,3500.0,50
+P910,Fitbit Sport Watch,9000.0,50
+P911,Garmin Fitness Tracker,12000.0,50
+P912,Garmin GPS Watch,18000.0,50
+P913,Garmin Heart Rate Monitor,8000.0,50
+P914,Garmin Smart Scale,6000.0,50
+P915,Garmin Running Watch,15000.0,50
+P916,Garmin Triathlon Watch,25000.0,50
+P917,Garmin Step Counter,3000.0,50
+P918,Garmin Sleep Tracker,9000.0,50
+P919,Garmin Activity Band,5000.0,50
+P920,Garmin Sport Watch,14000.0,50
+P921,Suunto Fitness Tracker,10000.0,50
+P922,Suunto GPS Watch,15000.0,50
+P923,Suunto Heart Rate Monitor,6000.0,50
+P924,Suunto Smart Scale,4500.0,50
+P925,Suunto Running Watch,12000.0,50
+P926,Suunto Triathlon Watch,20000.0,50
+P927,Suunto Step Counter,2500.0,50
+P928,Suunto Sleep Tracker,7000.0,50
+P929,Suunto Activity Band,4000.0,50
+P930,Suunto Sport Watch,11000.0,50
+P931,Polar Fitness Tracker,9000.0,50
+P932,Polar GPS Watch,14000.0,50
+P933,Polar Heart Rate Monitor,5500.0,50
+P934,Polar Smart Scale,4200.0,50
+P935,Polar Running Watch,11000.0,50
+P936,Polar Triathlon Watch,18000.0,50
+P937,Polar Step Counter,2200.0,50
+P938,Polar Sleep Tracker,6500.0,50
+P939,Polar Activity Band,3800.0,50
+P940,Polar Sport Watch,10500.0,50
+P941,Coros Fitness Tracker,11000.0,50
+P942,Coros GPS Watch,16000.0,50
+P943,Coros Heart Rate Monitor,7000.0,50
+P944,Coros Smart Scale,5000.0,50
+P945,Coros Running Watch,13000.0,50
+P946,Coros Triathlon Watch,22000.0,50
+P947,Coros Step Counter,2800.0,50
+P948,Coros Sleep Tracker,8000.0,50
+P949,Coros Activity Band,4500.0,50
+P950,Coros Sport Watch,12500.0,50
+P951,Amazfit Fitness Tracker,6000.0,50
+P952,Amazfit GPS Watch,9000.0,50
+P953,Amazfit Heart Rate Monitor,3500.0,50
+P954,Amazfit Smart Scale,2500.0,50
+P955,Amazfit Running Watch,7000.0,50
+P956,Amazfit Triathlon Watch,12000.0,50
+P957,Amazfit Step Counter,1500.0,50
+P958,Amazfit Sleep Tracker,4000.0,50
+P959,Amazfit Activity Band,2000.0,50
+P960,Amazfit Sport Watch,6500.0,50
+P961,Xiaomi Fitness Tracker,4000.0,50
+P962,Xiaomi GPS Watch,6000.0,50
+P963,Xiaomi Heart Rate Monitor,2500.0,50
+P964,Xiaomi Smart Scale,1800.0,50
+P965,Xiaomi Running Watch,5000.0,50
+P966,Xiaomi Triathlon Watch,8000.0,50
+P967,Xiaomi Step Counter,1000.0,50
+P968,Xiaomi Sleep Tracker,3000.0,50
+P969,Xiaomi Activity Band,1500.0,50
+P970,Xiaomi Sport Watch,4500.0,50
+P971,Huawei Fitness Tracker,5000.0,50
+P972,Huawei GPS Watch,7500.0,50
+P973,Huawei Heart Rate Monitor,3000.0,50
+P974,Huawei Smart Scale,2200.0,50
+P975,Huawei Running Watch,6000.0,50
+P976,Huawei Triathlon Watch,10000.0,50
+P977,Huawei Step Counter,1200.0,50
+P978,Huawei Sleep Tracker,3500.0,50
+P979,Huawei Activity Band,1800.0,50
+P980,Huawei Sport Watch,5500.0,50
+P981,Apple Fitness Tracker,15000.0,50
+P982,Apple GPS Watch,45000.0,50
+P983,Apple Heart Rate Monitor,10000.0,50
+P984,Apple Smart Scale,8000.0,50
+P985,Apple Running Watch,35000.0,50
+P986,Apple Triathlon Watch,55000.0,50
+P987,Apple Step Counter,5000.0,50
+P988,Apple Sleep Tracker,12000.0,50
+P989,Apple Activity Band,8500.0,50
+P990,Apple Sport Watch,40000.0,50
+P991,Samsung Fitness Tracker,10000.0,50
+P992,Samsung GPS Watch,25000.0,50
+P993,Samsung Heart Rate Monitor,7000.0,50
+P994,Samsung Smart Scale,5000.0,50
+P995,Samsung Running Watch,20000.0,50
+P996,Samsung Triathlon Watch,35000.0,49
+P997,Samsung Step Counter,3000.0,50
+P998,Samsung Sleep Tracker,8000.0,50
+P999,Samsung Activity Band,4500.0,50
+P1000,Samsung Sport Watch,22000.0,50

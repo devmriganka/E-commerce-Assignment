@@ -1,9 +1,10 @@
 ----- Order Summary -----
-Laptop x 1 = ₹50000.0
-Subtotal: ₹50000.0
-Discount applied (FLAT500): -₹500.0
-Tax (10%): ₹4950.0
-Total: ₹54450.0
+Apple Laptop x 1 = ₹85000.0
+Samsung Triathlon Watch x 1 = ₹35000.0
+Subtotal: ₹120000.0
+Discount applied (20OFF): -₹24000.0
+Tax (10%): ₹9600.0
+Total: ₹105600.0
 -------------------------
 Thank you for shopping with us!
 

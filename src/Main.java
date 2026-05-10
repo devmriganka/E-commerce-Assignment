@@ -34,13 +34,12 @@ public class Main {
         while (running) {
             System.out.println("\n--- Main Menu ---");
             System.out.println("1. Browse Products");
-            System.out.println("2. Add to Cart");
-            System.out.println("3. View Cart");
-            System.out.println("4. Update Item Quantity");
-            System.out.println("5. Remove Item from Cart");
-            System.out.println("6. Apply Coupon");
-            System.out.println("7. Checkout");
-            System.out.println("8. Exit");
+            System.out.println("2. View Cart");
+            System.out.println("3. Update Item Quantity");
+            System.out.println("4. Remove Item from Cart");
+            System.out.println("5. Apply Coupon");
+            System.out.println("6. Checkout");
+            System.out.println("7. Exit");
             System.out.print("Select an option: ");
 
             String choice = scanner.nextLine().trim();
@@ -51,32 +50,29 @@ public class Main {
                         browseProducts(scanner);
                         break;
                     case "2":
-                        addToCart(scanner);
-                        break;
-                    case "3":
                         viewCart();
                         break;
-                    case "4":
+                    case "3":
                         updateQuantity(scanner);
                         break;
-                    case "5":
+                    case "4":
                         removeItem(scanner);
                         break;
-                    case "6":
+                    case "5":
                         applyCoupon(scanner);
                         break;
-                    case "7":
+                    case "6":
                         if (checkout()) {
                             // After successful checkout, update the inventory in the CSV file
                             FileHandler.saveProducts(productsFile, catalog);
                         }
                         break;
-                    case "8":
+                    case "7":
                         running = false;
                         System.out.println("Thank you for shopping with us! Goodbye.");
                         break;
                     default:
-                        System.out.println("Invalid option. Please enter a number between 1 and 8.");
+                        System.out.println("Invalid option. Please enter a number between 1 and 7.");
                 }
             } catch (Exception e) {
                 System.out.println("Error: " + e.getMessage());
@@ -107,28 +103,42 @@ public class Main {
     private static String formatProductId(String input) {
         if (input.matches("P?\\d+")) {
             String numStr = input.startsWith("P") ? input.substring(1) : input;
-            return String.format("P%02d", Integer.parseInt(numStr));
+            return String.format("P%03d", Integer.parseInt(numStr));
         }
         return input;
     }
 
     private static void addToCart(Scanner scanner) {
-        System.out.print("Enter Product ID (e.g., 1 or P01): ");
-        String id = formatProductId(scanner.nextLine().trim().toUpperCase());
-        if (!catalog.containsKey(id)) {
-            System.out.println("Product not found.");
-            return;
+        boolean addMore = true;
+        while (addMore) {
+            System.out.print("Enter Product ID (e.g., 1 or P001): ");
+            String id = formatProductId(scanner.nextLine().trim().toUpperCase());
+            if (!catalog.containsKey(id)) {
+                System.out.println("Product not found.");
+            } else {
+                System.out.print("Enter Quantity: ");
+                int qty;
+                try {
+                    qty = Integer.parseInt(scanner.nextLine().trim());
+                } catch (NumberFormatException e) {
+                    System.out.println("Invalid quantity format.");
+                    // Ask if they want to try again after invalid input
+                    System.out.print("Would you like to try again? (Y/N): ");
+                    String tryAgain = scanner.nextLine().trim().toUpperCase();
+                    if (!tryAgain.equals("Y") && !tryAgain.equals("YES")) {
+                        addMore = false;
+                    }
+                    continue; // Skip the rest and ask if they want to add more
+                }
+                cart.addItem(catalog.get(id), qty);
+                System.out.println("Item added to cart successfully.");
+            }
+
+            // Ask if they want to add more items
+            System.out.print("Would you like to add more items? (Y/N): ");
+            String choice = scanner.nextLine().trim().toUpperCase();
+            addMore = choice.equals("Y") || choice.equals("YES");
         }
-        System.out.print("Enter Quantity: ");
-        int qty;
-        try {
-            qty = Integer.parseInt(scanner.nextLine().trim());
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid quantity format.");
-            return;
-        }
-        cart.addItem(catalog.get(id), qty);
-        System.out.println("Item added to cart successfully.");
     }
 
     private static void viewCart() {
@@ -163,10 +173,33 @@ public class Main {
     }
 
     private static void removeItem(Scanner scanner) {
-        System.out.print("Enter Product ID to remove: ");
-        String id = formatProductId(scanner.nextLine().trim().toUpperCase());
-        cart.removeItem(id);
-        System.out.println("Item removed (if it existed in the cart).");
+        if (cart.getItems().isEmpty()) {
+            System.out.println("Your cart is empty.");
+            return;
+        }
+
+        System.out.println("\n--- Your Cart ---");
+        List<CartItem> items = cart.getItems();
+        for (int i = 0; i < items.size(); i++) {
+            CartItem item = items.get(i);
+            System.out.println((i + 1) + ". " + item.getProduct().getName() + " (ID: " + item.getProduct().getId() + ") x " + item.getQuantity());
+        }
+        System.out.println("-------------------------");
+
+        System.out.print("Enter item number to remove: ");
+        String input = scanner.nextLine().trim();
+        try {
+            int index = Integer.parseInt(input) - 1;
+            if (index >= 0 && index < items.size()) {
+                String idToRemove = items.get(index).getProduct().getId();
+                cart.removeItem(idToRemove);
+                System.out.println("Item removed successfully.");
+            } else {
+                System.out.println("Invalid item number.");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a number.");
+        }
     }
 
     private static void applyCoupon(Scanner scanner) {
