@@ -52,15 +52,27 @@ public class Main {
                         viewCart();
                         break;
                     case "3":
-                        manageCart(scanner);
+                        boolean skipMainPrompt = manageCart(scanner);
+                        if (!skipMainPrompt && running) {
+                            System.out.print("\nPress Enter to return to the main menu...");
+                            scanner.nextLine();
+                        }
                         break;
                     case "4":
-                        applyCoupon(scanner);
+                        boolean skipPrompt = applyCoupon(scanner);
+                        if (!skipPrompt && running) {
+                            System.out.print("\nPress Enter to return to the main menu...");
+                            scanner.nextLine();
+                        }
                         break;
                     case "5":
                         if (checkout()) {
                             // After successful checkout, update the inventory in the CSV file
                             FileHandler.saveProducts(productsFile, catalog);
+                        }
+                        if (running) {
+                            System.out.print("\nPress Enter to return to the main menu...");
+                            scanner.nextLine();
                         }
                         break;
                     case "6":
@@ -75,8 +87,8 @@ public class Main {
             }
 
             if (running) {
-                System.out.print("\nPress Enter to return to the main menu...");
-                scanner.nextLine();
+                // Only ask for enter if we didn't already handle it in the case above
+                // (the continue statements above handle this now)
             }
         }
         scanner.close();
@@ -198,24 +210,24 @@ public class Main {
         }
     }
 
-    private static void applyCoupon(Scanner scanner) {
+    private static boolean applyCoupon(Scanner scanner) {
         System.out.println("\n--- Available Coupons ---");
         int index = 1;
         List<String> couponCodes = new ArrayList<>(coupons.keySet());
         for (String code : couponCodes) {
             Coupon c = coupons.get(code);
-            String discountStr = c.getDiscountType() == Coupon.DiscountType.FLAT 
-                ? "₹" + c.getDiscountValue() + " OFF" 
+            String discountStr = c.getDiscountType() == Coupon.DiscountType.FLAT
+                ? "₹" + c.getDiscountValue() + " OFF"
                 : c.getDiscountValue() + "% OFF";
             System.out.println(index + ". " + c.getCode() + " (" + discountStr + ")");
             index++;
         }
         System.out.println("-------------------------");
-        
+
         System.out.print("Enter Coupon Code or Number: ");
         String input = scanner.nextLine().trim().toUpperCase();
         String selectedCode = input;
-        
+
         if (input.matches("\\d+")) {
             int selectedIndex = Integer.parseInt(input) - 1;
             if (selectedIndex >= 0 && selectedIndex < couponCodes.size()) {
@@ -225,24 +237,27 @@ public class Main {
 
         if (!coupons.containsKey(selectedCode)) {
             System.out.println("Error: Invalid coupon selection.");
-            return;
+            return false; // Don't skip prompt - invalid selection
         }
         cart.applyCoupon(coupons.get(selectedCode), currentDate);
         System.out.println("Coupon applied successfully!");
+        return true; // Skip the prompt - go directly to main menu
     }
 
-    private static void manageCart(Scanner scanner) {
+    private static boolean manageCart(Scanner scanner) {
         if (cart.getItems().isEmpty()) {
             System.out.println("Your cart is empty.");
-            return;
+            return false; // Don't skip main prompt - we want to show it since we're not really in the menu
         }
 
         boolean managing = true;
+        boolean skipMainPrompt = false;
         while (managing) {
             System.out.println("\n--- Manage Cart ---");
             System.out.println("1. Update Item Quantity");
             System.out.println("2. Remove Item from Cart");
-            System.out.println("3. Back to Main Menu");
+            System.out.println("3. Add Item to Cart");
+            System.out.println("4. Back to Main Menu");
             System.out.print("Select an option: ");
 
             String choice = scanner.nextLine().trim();
@@ -255,10 +270,14 @@ public class Main {
                     removeItem(scanner);
                     break;
                 case "3":
+                    addToCart(scanner);
+                    break;
+                case "4":
                     managing = false;
+                    skipMainPrompt = true; // Signal to skip the main menu prompt
                     break;
                 default:
-                    System.out.println("Invalid option. Please enter 1, 2, or 3.");
+                    System.out.println("Invalid option. Please enter 1, 2, 3, or 4.");
             }
 
             if (managing) {
@@ -266,6 +285,7 @@ public class Main {
                 scanner.nextLine();
             }
         }
+        return skipMainPrompt;
     }
 
     private static boolean checkout() {
@@ -273,7 +293,7 @@ public class Main {
             String receipt = cart.checkout();
             System.out.println(receipt);
             System.out.println("Checkout successful! Your inventory has been updated.");
-            
+
             // Write receipt to sample_outputs.txt
             try (java.io.PrintWriter out = new java.io.PrintWriter(new java.io.FileOutputStream("output/sample_outputs.txt", true))) {
                 out.println(receipt);
@@ -281,7 +301,7 @@ public class Main {
             } catch (Exception e) {
                 System.out.println("Could not write receipt to file.");
             }
-            
+
             return true;
         } catch (IllegalStateException e) {
             System.out.println("Checkout failed: " + e.getMessage());
